@@ -1,0 +1,30 @@
+router_hostname: "SUC1-RTR"
+domain_name: "evaluacion4.local"
+
+ntp_server: "pool.ntp.org"
+
+admin_user: "admin"
+admin_password: "CAMBIAR_ESTA_PASSWORD"
+
+readonly_user: "operador"
+readonly_password: "CAMBIAR_ESTA_PASSWORD"
+
+login_attempts: 3
+login_block_seconds: 120
+login_watch_seconds: 60
+
+vlans:
+  - id: 10
+    ip: "10.10.10.1"
+    mask: "255.255.255.0"
+    desc: "VLAN10"
+  - id: 20
+    ip: "10.10.20.1"
+    mask: "255.255.255.0"
+    desc: "VLAN20"
+  - id: 30
+    ip: "10.10.30.1"
+    mask: "255.255.255.0"
+    desc: "VLAN30"
+
+physical_interface: "GigabitEthernet1"

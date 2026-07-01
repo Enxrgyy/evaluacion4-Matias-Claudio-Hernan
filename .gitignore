@@ -1,0 +1,16 @@
+# Variables con credenciales reales - NO subir
+ansible/group_vars/all.yml
+
+# Inventario con credenciales reales
+ansible/inventory.ini
+
+# Backups con running-config real (contiene hashes de passwords)
+backups/*.json
+
+# Reportes de validacion
+reportes/*.json
+
+# Archivos temporales
+*.retry
+__pycache__/
+*.pyc
