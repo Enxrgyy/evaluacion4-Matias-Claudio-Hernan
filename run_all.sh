@@ -6,6 +6,7 @@
 ###############################################################################
 
 set -e  # Detiene el script si algun comando falla
+source "$HOME/evaluacion4/.env"
 
 # ===== Colores para el output =====
 VERDE='\033[0;32m'

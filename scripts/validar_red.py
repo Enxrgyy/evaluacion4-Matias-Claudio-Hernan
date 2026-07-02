@@ -13,9 +13,9 @@ import os
 router = {
     "device_type": "cisco_ios",
     "host": "192.168.56.101",
-    "username": "admin",
-    "password": "AdminP4ss!",
-    "secret": "AdminP4ss!",
+    "username": os.environ.get("ROUTER_USER", "admin"),
+    "password": os.environ.get("ROUTER_PASSWORD", ""),
+    "secret": os.environ.get("ROUTER_PASSWORD", ""),
 }
 
 # ===== Datos esperados (segun lo configurado en Fase 1) =====
